@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>BINARIOS</title>
+  <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/binarios.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Convertidor de binarios</h1>
+  </header>
+  <div class="contenedor">
+    <form class="formulario" action="." method="post">
+      <p>
+        <label for="ingresar">Ingresa aqui el texto a convertir</label>
+        <br>
+        <br>
+        <textarea name="contenedorcodigo" rows="10" cols="40"></textarea>
+      </p>
+      <p>
+        <button type="submit" name="convertirBtn">Convertir!</button>
+      </p>
+      <p>
+        <label for="ingresar">Resultado en binario</label>
+        <br>
+        <br>
+        <textarea name="resultado" rows="10" cols="40" disabled>{{resultado}}</textarea>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
